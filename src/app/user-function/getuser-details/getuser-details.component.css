@@ -1,0 +1,26 @@
+.h1{
+    font-style: italic;
+   text-underline-offset: unset;
+}
+.a{
+    color: thistle;
+}
+.btn1 {
+    margin-top: 20px;
+    background-color: lightskyblue;
+    color: rgb(0, 0, 0);
+    padding: 6px 10px;
+    margin: 8px 0;
+    margin-left: 560px;
+    border: 0.6px solid;
+    border-radius: 2px;
+    cursor: pointer;
+    /* width: 100%; */
+    /* opacity: 0.9; */
+}
+.btn1:hover{
+  border: 2px rgb(12, 11, 10);
+  background-color: rgb(61, 159, 219);
+  padding: 8px;
+
+}

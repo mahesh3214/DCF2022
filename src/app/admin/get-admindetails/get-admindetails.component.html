@@ -1,0 +1,29 @@
+<br><br>
+<h1>Admin Details</h1>
+<br><br>
+
+<div class="px-5 " *ngIf="admindetails">
+        <div class="card card-background">
+                <div class="card-body">
+                        <div class="row m-0">
+                                <div class="col-3 ">
+                                        <h5 class="card-title">Name</h5>
+                                        <p class="card-text">{{admindetails.name}}</p>
+                                </div>
+                                <div class="col-3">
+                                        <h5 class="card-title">Email</h5>
+                                        <p class="card-text">{{admindetails.email}}</p>
+                                </div>
+                                <div class="col-3">
+                                        <h5 class="card-title">username</h5>
+                                        <p class="card-text">{{admindetails.username}}</p>
+                                </div>
+                                <div class="col-3">
+                                        <h5 class="card-title">roles</h5>
+                                        <p class="card-text">{{admindetails.roles}}</p>
+                                </div>
+                        </div>
+                </div>    
+                        
+         </div>       
+</div>

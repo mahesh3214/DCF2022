@@ -1,0 +1,128 @@
+<div class="container mt-5"></div>
+<div class="card ms-auto me-auto p-3 shadow-lg custom-card">
+<form #f="ngForm" (ngSubmit)="f.form.valid && register()" >
+  <h1>Add Coupon Details</h1>
+    <div class="form-group">
+    <label for="id">id</label>
+    <input
+      type="text"
+      id="id"
+      name="id"
+      [(ngModel)]="coupon.id"
+      #id="ngModel"
+      class="form-control"
+      required
+    />
+    <div class="alert-danger"  *ngIf="!id.valid && f.submitted" >
+      ID is required.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="provider">provider</label>
+    <input
+      type="text"
+      id="provider"
+      name="provider"
+      [(ngModel)]="coupon.provider"
+      #provider="ngModel"
+      class="form-control"
+      required
+    />
+    <div class="alert-danger"  *ngIf="!provider.valid && f.submitted">
+        provider is required.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="code">code</label>
+    <input
+      type="text"
+      id="code"
+      name="code"
+      [(ngModel)]="coupon.code"
+      #code="ngModel"
+      class="form-control"
+      required
+    />
+    <div class="alert-danger"  *ngIf="!code.valid && f.submitted" >
+        code is required.
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="category" >category</label>
+    <input
+      type="test"
+      id="category"
+      name="category"
+      [(ngModel)]="coupon.category"
+      #category="ngModel"
+      class="form-control"
+      required
+    />
+    <div class="alert-danger"  *ngIf="!category.valid && f.submitted" >
+        category is required.
+    </div>
+</div>
+
+<div class="form-group">
+  <label for="expiryDate" >expiryDate</label>
+  
+  <input
+  type="text"
+    id="expiryDate"
+    name="expiryDate"
+    [(ngModel)]="coupon.expiryDate"
+    #expiryDate="ngModel"
+    class="form-control"
+    required
+
+  />
+  <div class="alert-danger"  *ngIf="!expiryDate.valid && f.submitted" >
+    expiryDate is required.
+  </div>
+</div>
+
+
+<div class="form-group">
+    <label for="description" >description</label>
+    
+    <input
+    type="text"
+      id="description"
+      name="description"
+      [(ngModel)]="coupon.description"
+      #description="ngModel"
+      class="form-control"
+      required
+  
+    />
+    <div class="alert-danger"  *ngIf="!description.valid && f.submitted" >
+      expiryDate is required.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="link" >link</label>
+    
+    <input
+    type="text"
+      id="link"
+      name="link"
+      [(ngModel)]="coupon.link"
+      #link="ngModel"
+      class="form-control"
+      required
+  
+    />
+    <div class="alert-danger"  *ngIf="!link.valid && f.submitted" >
+      expiryDate is required.
+    </div>
+  </div>
+    
+    
+    <button type="submit" class="btn btn-success w-100 mt-3" style="background-color: #2eb335;">
+       ADD Coupon
+      </button>  
+    </form>
+    </div>

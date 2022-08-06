@@ -1,0 +1,25 @@
+
+  <div class="row m-0 ">
+  <div class="col-1 px-0 position-fixed" style="background-color: rgb(218, 218, 218);">
+      <div class="nav flex-column flex-nowrap text-white p-1" style="height: 104vh !important;" >
+        <nav>   
+            <br>
+          <a [routerLink]="['/user/profile']" class="nav-link" style="color: rgb(233, 232, 230);">My Profile</a>
+            <br>
+          <a [routerLink]="['/user/get']" class="nav-link" style="color: rgb(233, 232, 230);">View All Coupons</a>
+          <br>
+        </nav>
+       </div>
+      </div>
+      
+     <div class="col-12 px-0 offset-1 position-fixed"style="background-image: url(/assets/image/welcomeuser.jpg);">
+      <div class="nav flex-column flex-nowrap overflow-auto p-1 "style="height: 100vh !important" >
+      <router-outlet></router-outlet>
+      <br>
+      <br>
+      <app-footer></app-footer>
+  </div>
+  </div>
+  </div>
+
+

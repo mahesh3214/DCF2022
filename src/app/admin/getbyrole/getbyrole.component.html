@@ -1,0 +1,45 @@
+<div class="container mt-2">
+<div class="card ms-auto me-auto p-3 shadow-lg custom-card">
+<form #f="ngForm" (ngSubmit)="f.form.valid && register()">
+    <div class="form-group">
+        <label for="role" style="color: cyan;"> <h3>Choose a Role  :</h3> </label>
+        
+        <select #role="ngModel" 
+         name="role" id="" class="custom-select" [(ngModel)]=user.roles>
+         <option *ngFor="let role of roles">{{role}}</option>
+        </select>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+<section class="bg-light shadow-sm">
+    <div class="container">
+        <div class="row-10 pt-10">
+            <div class="col-12 mt-4 pt-4 pb-4">
+                <h3 class="text-uppercase border-bottom mb-1 text-center">
+                   <b>ALL USERS</b>
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <!--ADD CLASSES HERE d-flex align-items-stretch-->
+            <div class="col-12 mb-5 d-flex align-items-stretch" *ngFor="let user of userList; index as ind">
+                <div class="card max-500 w-100">
+                    <fa-icon  [icon]="faUser" class="ms-auto pt-5 me-auto user-icon" ></fa-icon>
+                    <div class="card-body m-5 d-flex flex-column">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><b>username:</b>{{ user.username }}</li>
+                            <li class="list-group-item"><b>Email:</b>{{ user.email }}</li>
+                            <li class="list-group-item">
+                                <b>Full Name:</b>{{ user.name }}
+                            </li>
+                            <li class="list-group-item">
+                                <b>Role:</b>{{ user.roles?.values()?.next()?.value["role"] }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>

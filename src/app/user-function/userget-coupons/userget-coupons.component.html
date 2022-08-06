@@ -1,0 +1,45 @@
+<div class="color">
+    <h1 class="cop">Coupons</h1>
+    <div *ngIf="coupon" >
+      <ul class="nav topnav active justify-content-center">
+        <li class="nav-item  p-2" *ngFor="let coup of coupon" class="flip-card">
+          <div class="card m-5 flip-card-inner" style="width: 230px; height:25rem;">
+            <div class="flip-card-front">
+              <div class="card-block">
+                <h4 class="card-title"> <br>
+                  <p> {{coup.provider}}</p>
+                </h4>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="card-header">
+                    <h5>Category</h5>
+                    <h6>{{coup.category}}</h6>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <h5>Code</h5>
+                  <h6>{{coup.code}}</h6>
+                  
+                </li>
+                <li class="list-group-item">
+                  <h5>ExpiryDate</h5>
+                  <h6>{{coup.expiryDate}}</h6>
+                  <h5>Link</h5>
+                  <h6>{{coup.link}}</h6>
+                </li>
+                <li class="list-group-item">
+                </li>
+              </ul>
+              <div class="card-block">
+                <h5>Description</h5>
+                <h6 class="card-text">{{coup.description}}</h6>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div></div>
+    <br><br>

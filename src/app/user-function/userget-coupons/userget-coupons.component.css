@@ -1,0 +1,29 @@
+.flip-card-front{
+    background-image:url("/assets/image/coupons.jpeg") ;
+    image-resolution: 500px;
+    background-position: center;
+}
+.card-title{
+    font-style: italic;
+   text-decoration-line: underline ;
+   color: rgb(208, 231, 1);
+   text-decoration-style: dotted;
+   font-size: 40px;
+}
+.color{
+    background-color: rgb(155, 216, 213);
+}
+.cop{
+    text-decoration-line: underline;
+    color: rgb(136, 70, 70);
+}
+
+.color{
+    background-image: url("/assets/image/coupons.jpg");
+}
+.cop{
+    text-decoration-line: underline;
+    color: rgb(245, 241, 241);
+    font-size: 40px;
+    font-style: oblique;
+}
